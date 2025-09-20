@@ -1,4 +1,157 @@
-📄 Νέος index.html με 9 προϊόντα
+📄<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olive Oil Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #4a5d23;
+      color: white;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+    .grid-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-info h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #4a5d23;
+    }
+    .product-info .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #a65f00;
+    }
+    .product-info button {
+      background-color: #4a5d23;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .product-info button:hover {
+      background-color: #3c4919;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Olive Oil Shop</h1>
+    <p>Τα καλύτερα ελαιόλαδα για σένα</p>
+  </header>
+
+  <div class="container">
+    <div class="grid-products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598032892013-fb76fbd6e98b?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο Ελαιόλαδο">
+        <div class="product-info">
+          <h3>Εξαιρετικό Παρθένο Ελαιόλαδο</h3>
+          <span class="price">€10,00</span>
+          <button>Αγορά Τώρα</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1583344456647-b263b1f3ed5b?auto=format&fit=crop&w=500" alt="Βιολογικό">
+        <div class="product-info">
+          <h3>Βιολογικό Ελαιόλαδο</h3>
+          <span class="price">€12,00</span>
+          <button>Αγορά Τώρα</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1617196038496-77c8f478d1bc?auto=format&fit=crop&w=500" alt="Premium">
+        <div class="product-info">
+          <h3>Premium Ελαιόλαδο</h3>
+          <span class="price">€15,00</span>
+          <button>Αγορά Τώρα</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1601050690597-df6a5c0f6e7f?auto=format&fit=crop&w=500" alt="Λεμόνι">
+        <div class="product-info">
+          <h3>Αρωματικό με Λεμόνι</h3>
+          <span class="price">€14,00</span>
+          <button>Αγορά Τώρα</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1601050690598-68e3a2f0cc90?auto=format&fit=crop&w=500" alt="Βότανα">
+        <div class="product-info">
+          <h3>Αρωματικό με Βότανα</h3>
+          <span class="price">€14,00</span>
+          <button>Αγορά Τώρα</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac1d?auto=format&fit=crop&w=500" alt="Καλαμάτας">
+        <div class="product-info">
+          <h3>Ελαιόλαδο Καλαμάτας</h3>
+          <span class="price">€20,00</span>
+          <button>Αγορά Τώρα</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Olive Oil Shop. Όλα τα δικαιώματα διατηρούνται.
+  </footer>
+</body>
+</html>
+ Νέος index.html με 9 προϊόντα
 <!DOCTYPE html>
 <html lang="el">
 <head>
