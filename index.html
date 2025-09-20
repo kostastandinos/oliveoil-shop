@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Olive Oil Shop</title>
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/32/2909/2909765.png">
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfcf8;
-      color: #333;
       margin: 0;
       padding: 0;
+      background-color: #fdfcf8;
+      color: #333;
     }
 
     /* Sticky Navbar */
@@ -63,6 +62,60 @@
 
     nav a:hover {
       background-color: rgba(255, 215, 0, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 450px;
+      background-image: url('https://images.unsplash.com/photo-1580910051072-f6a8b8e3d85f?auto=format&fit=crop&w=1600');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .hero a {
+      background-color: #ffd700;
+      color: #3c4d1c;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .hero a:hover {
+      background-color: #e6c200;
     }
 
     .container {
@@ -144,7 +197,6 @@
       border-top: 1px solid #ddd;
     }
 
-    /* Smooth scroll */
     html {
       scroll-behavior: smooth;
     }
@@ -164,11 +216,16 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Premium Ελαιόλαδα</h2>
+      <p>Απευθείας από τον παραγωγό στο σπίτι σας</p>
+      <a href="#products">Αγορά Τώρα</a>
+    </div>
+  </section>
+
   <div class="container" id="products">
     <div class="grid-products">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1598032892013-fb76fbd6e98b?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο Ελαιόλαδο">
-        <div class="product-info">
-          <h3>Εξαιρετικό Παρθένο Ελαιόλαδο</h3>
-          <span class="price">€10,00</span>
-          <button>Αγορά Τώρα</button
+        <img src="https://images.unsplash.com/photo-1598032892013-fb76fbd6e98b?auto=format&fit=crop&
