@@ -1,53 +1,203 @@
-<div class="carousel-wrapper">
-  <div class="carousel" id="carousel">
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1598032892013-fb76fbd6e98b?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο Ελαιόλαδο">
-      <div class="product-info"><h3>Εξαιρετικό Παρθένο Ελαιόλαδο</h3><span class="price">€10,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1583344456647-b263b1f3ed5b?auto=format&fit=crop&w=500" alt="Βιολογικό Ελαιόλαδο">
-      <div class="product-info"><h3>Βιολογικό Ελαιόλαδο</h3><span class="price">€12,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1617196038496-77c8f478d1bc?auto=format&fit=crop&w=500" alt="Premium Ελαιόλαδο">
-      <div class="product-info"><h3>Premium Ελαιόλαδο</h3><span class="price">€15,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1585170473524-44ee29a8b84b?auto=format&fit=crop&w=500" alt="Ελαιόλαδο με Βότανα">
-      <div class="product-info"><h3>Ελαιόλαδο με Βότανα</h3><span class="price">€14,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1608397439120-4cbe1b5b2f7d?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο 1L">
-      <div class="product-info"><h3>Εξαιρετικό Παρθένο 1L</h3><span class="price">€18,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1603071766760-9146d58f7e62?auto=format&fit=crop&w=500" alt="Μικρή Συσκευασία Ελαιόλαδου">
-      <div class="product-info"><h3>Μικρή Συσκευασία Ελαιόλαδου</h3><span class="price">€6,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1595242561180-1b7880b8689e?auto=format&fit=crop&w=500" alt="Ελαιόλαδο με Λεμόνι">
-      <div class="product-info"><h3>Ελαιόλαδο με Λεμόνι</h3><span class="price">€13,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1601680302034-d5211f372b7d?auto=format&fit=crop&w=500" alt="Βιολογικό Εξαιρετικό 500ml">
-      <div class="product-info"><h3>Βιολογικό Εξαιρετικό 500ml</h3><span class="price">€11,50</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1618893060544-8d2c5c5e2c42?auto=format&fit=crop&w=500" alt="Εξαιρετικό Μεσογειακό">
-      <div class="product-info"><h3>Εξαιρετικό Μεσογειακό</h3><span class="price">€16,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1618892917823-3d00a64d8ebc?auto=format&fit=crop&w=500" alt="Ελαιόλαδο για Σαλάτες">
-      <div class="product-info"><h3>Ελαιόλαδο για Σαλάτες</h3><span class="price">€9,50</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1618892812230-cb890c9d16b6?auto=format&fit=crop&w=500" alt="Προϊόν Deluxe 750ml">
-      <div class="product-info"><h3>Προϊόν Deluxe 750ml</h3><span class="price">€20,00</span><button>Αγορά Τώρα</button></div>
-    </div>
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1618892710341-7b3e3b2c4f5b?auto=format&fit=crop&w=500" alt="Μικρή Συσκευασία Deluxe">
-      <div class="product-info"><h3>Μικρή Συσκευασία Deluxe</h3><span class="price">€8,00</span><button>Αγορά Τώρα</button></div>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olive Oil Shop</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/32/2909/2909765.png">
+<style>
+/* --- Basic Reset & Fonts --- */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#fdfbf5; color:#333; }
+a { text-decoration:none; }
+
+/* --- Navbar --- */
+header { position:sticky; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:linear-gradient(135deg,#556b2f,#8fbc8f); color:#fff; box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+.logo-title { display:flex; align-items:center; }
+.logo-title img { width:50px; height:50px; margin-right:10px; }
+.logo-title h1 { font-size:1.8rem; color:#fffacd; letter-spacing:1px; }
+nav { display:flex; gap:25px; }
+nav a { font-weight:bold; color:#fff; padding:6px 12px; border-radius:6px; transition:0.3s; }
+nav a:hover { background:rgba(255,255,255,0.2); }
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
+.hamburger div { width:25px; height:3px; background:#fff; }
+
+/* --- Hero Section --- */
+.hero { height:600px; background:url('https://images.unsplash.com/photo-1580910051072-f6a8b8e3d85f?auto=format&fit=crop&w=1600') center/cover no-repeat; position:relative; display:flex; justify-content:center; align-items:center; text-align:center; }
+.hero::after { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
+.hero-content { position:relative; color:#fff; max-width:700px; animation:fadeIn 1.5s forwards; }
+.hero h2 { font-size:3rem; margin-bottom:20px; }
+.hero p { font-size:1.2rem; margin-bottom:25px; }
+.hero a { background:linear-gradient(90deg,#ffd700,#ffb84d); color:#3c4d1c; padding:15px 30px; border-radius:10px; font-weight:bold; transition:0.3s; }
+.hero a:hover { background:linear-gradient(90deg,#ffb84d,#ffd700); }
+
+/* --- Container --- */
+.container { max-width:1200px; margin:60px auto; padding:0 20px; }
+
+/* --- Carousel --- */
+.carousel-wrapper { position:relative; overflow:hidden; }
+.carousel { display:flex; gap:20px; transition:transform 0.5s ease-in-out; }
+.product-card { min-width:280px; background:white; border-radius:14px; overflow:hidden; transition:transform 0.3s, box-shadow 0.3s, opacity 0.6s ease-out; opacity:0; transform:translateY(20px); }
+.product-card.visible { opacity:1; transform:translateY(0); }
+.product-card:hover { transform:scale(1.05); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+.product-card img { width:100%; height:220px; object-fit:cover; }
+.product-info { padding:20px; display:flex; flex-direction:column; }
+.product-info h3 { margin-bottom:12px; color:#556b2f; }
+.product-info .price { font-weight:bold; color:#b8860b; font-size:1.1rem; }
+.product-info button { margin-top:15px; padding:12px; border:none; border-radius:8px; background:linear-gradient(90deg,#ffd700,#ffb84d); color:#3c4d1c; font-weight:bold; cursor:pointer; transition:0.3s; }
+.product-info button:hover { background:linear-gradient(90deg,#ffb84d,#ffd700); }
+
+/* --- Why Us --- */
+.why-us { background:#eae7dc; padding:60px 20px; text-align:center; }
+.why-us h2 { margin-bottom:40px; font-size:2.2rem; color:#3c4d1c; }
+.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; }
+.feature { background:white; padding:30px; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+.feature h3 { margin-bottom:12px; color:#6a7b32; }
+.feature p { font-size:0.95rem; }
+
+/* --- Contact --- */
+.contact { padding:60px 20px; text-align:center; background:#f9f9f9; }
+.contact h2 { margin-bottom:30px; font-size:2rem; color:#3c4d1c; }
+.contact form { max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:15px; }
+.contact input, .contact textarea { padding:14px; border-radius:8px; border:1px solid #ccc; width:100%; font-size:1rem; }
+.contact button { background:#556b2f; color:#fff; border:none; padding:14px; border-radius:8px; cursor:pointer; font-weight:bold; transition:0.3s; }
+.contact button:hover { background:#6a7b32; }
+
+/* --- Footer --- */
+footer { text-align:center; padding:30px; font-size:0.9rem; color:#666; background:#fafafa; border-top:1px solid #ddd; }
+
+/* --- Animations --- */
+@keyframes fadeIn { to { opacity:1; } }
+
+/* --- Responsive --- */
+@media(max-width:768px){
+  nav { display:none; flex-direction:column; position:absolute; top:65px; right:0; background:#556b2f; width:200px; border-radius:0 0 0 10px; }
+  nav.show { display:flex; }
+  .hamburger { display:flex; }
+  .carousel-wrapper { overflow-x:scroll; }
+  .carousel { flex-wrap:nowrap; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="https://cdn-icons-png.flaticon.com/512/2909/2909765.png" alt="Logo">
+    <h1>Olive Oil Shop</h1>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+  <nav id="nav-links">
+    <a href="#home">Αρχική</a>
+    <a href="#products">Προϊόντα</a>
+    <a href="#why-us">Γιατί Εμάς</a>
+    <a href="#contact">Επικοινωνία</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h2>Ανακαλύψτε την Τέχνη του Εξαιρετικού Παρθένου Ελαιολάδου</h2>
+    <p>Απευθείας από τον παραγωγό στο σπίτι σας</p>
+    <a href="#products">Δείτε τα Προϊόντα</a>
+  </div>
+</section>
+
+<div class="container" id="products">
+  <h2 style="text-align:center; margin-bottom:40px; color:#3c4d1c;">Προϊόντα</h2>
+  <div class="carousel-wrapper">
+    <div class="carousel" id="carousel">
+      <!-- 12 προϊόντα -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598032892013-fb76fbd6e98b?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο Ελαιόλαδο">
+        <div class="product-info"><h3>Εξαιρετικό Παρθένο Ελαιόλαδο</h3><span class="price">€10,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1583344456647-b263b1f3ed5b?auto=format&fit=crop&w=500" alt="Βιολογικό Ελαιόλαδο">
+        <div class="product-info"><h3>Βιολογικό Ελαιόλαδο</h3><span class="price">€12,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1617196038496-77c8f478d1bc?auto=format&fit=crop&w=500" alt="Premium Ελαιόλαδο">
+        <div class="product-info"><h3>Premium Ελαιόλαδο</h3><span class="price">€15,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1585170473524-44ee29a8b84b?auto=format&fit=crop&w=500" alt="Ελαιόλαδο με Βότανα">
+        <div class="product-info"><h3>Ελαιόλαδο με Βότανα</h3><span class="price">€14,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1608397439120-4cbe1b5b2f7d?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο 1L">
+        <div class="product-info"><h3>Εξαιρετικό Παρθένο 1L</h3><span class="price">€18,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1603071766760-9146d58f7e62?auto=format&fit=crop&w=500" alt="Μικρή Συσκευασία Ελαιόλαδου">
+        <div class="product-info"><h3>Μικρή Συσκευασία Ελαιόλαδου</h3><span class="price">€6,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1595242561180-1b7880b8689e?auto=format&fit=crop&w=500" alt="Ελαιόλαδο με Λεμόνι">
+        <div class="product-info"><h3>Ελαιόλαδο με Λεμόνι</h3><span class="price">€13,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1601680302034-d5211f372b7d?auto=format&fit=crop&w=500" alt="Βιολογικό Εξαιρετικό 500ml">
+        <div class="product-info"><h3>Βιολογικό Εξαιρετικό 500ml</h3><span class="price">€11,50</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618893060544-8d2c5c5e2c42?auto=format&fit=crop&w=500" alt="Εξαιρετικό Μεσογειακό">
+        <div class="product-info"><h3>Εξαιρετικό Μεσογειακό</h3><span class="price">€16,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618892917823-3d00a64d8ebc?auto=format&fit=crop&w=500" alt="Ελαιόλαδο για Σαλάτες">
+        <div class="product-info"><h3>Ελαιόλαδο για Σαλάτες</h3><span class="price">€9,50</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618892812230-cb890c9d16b6?auto=format&fit=crop&w=500" alt="Προϊόν Deluxe 750ml">
+        <div class="product-info"><h3>Προϊόν Deluxe 750ml</h3><span class="price">€20,00</span><button>Αγορά Τώρα</button></div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618892710341-7b3e3b2c4f5b?auto=format&fit=crop&w=500" alt="Μικρή Συσκευασία Deluxe">
+        <div class="product-info"><h3>Μικρή Συσκευασία Deluxe</h3><span class="price">€8,00</span><button>Αγορά Τώρα</button></div>
+      </div>
     </div>
   </div>
-  <div class="dots" id="dots"></div>
 </div>
+
+<section class="why-us" id="why-us">
+  <h2>Γιατί να Επιλέξετε Εμάς</h2>
+  <div class="features">
+    <div class="feature"><h3>Υψηλή Ποιότητα</h3><p>Επιλεγμένοι ελαιώνες και προσεκτική επεξεργασία.</p></div>
+    <div class="feature"><h3>Φυσικό Προϊόν</h3><p>Χωρίς πρόσθετα ή συντηρητικά.</p></div>
+    <div class="feature"><h3>Άμεση Αποστολή</h3><p>Από τον παραγωγό απευθείας σε εσάς.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Επικοινωνήστε Μαζί Μας</h2>
+  <form>
+    <input type="text" placeholder="Όνομα" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="5" placeholder="Μήνυμα" required></textarea>
+    <button type="submit">Αποστολή</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Olive Oil Shop. All rights reserved.
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('nav-links').classList.toggle('show');
+}
+
+// Fade-in products on scroll
+const cards = document.querySelectorAll('.product-card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold:0.1 });
+cards.forEach(card => observer.observe(card));
+</script>
+</body>
+</html>
