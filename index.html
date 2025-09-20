@@ -6,52 +6,58 @@
   <title>Olive Oil Shop</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfcf8;
       color: #333;
       margin: 0;
       padding: 0;
     }
     header {
       text-align: center;
-      background-color: #4a5d23;
-      color: white;
-      padding: 20px;
+      background: linear-gradient(135deg, #3c4d1c, #6a7b32);
+      color: #f5f2e7;
+      padding: 30px 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #ffd700; /* χρυσό */
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1.2rem;
     }
     .container {
-      max-width: 1100px;
-      margin: 20px auto;
+      max-width: 1200px;
+      margin: 30px auto;
       padding: 0 15px;
     }
     .grid-products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
     .product-card {
       background-color: white;
       border: 1px solid #ddd;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.25s, box-shadow 0.25s;
       display: flex;
       flex-direction: column;
     }
     .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-6px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
     }
     .product-card img {
       width: 100%;
-      height: 200px;
+      height: 220px;
       object-fit: cover;
     }
     .product-info {
-      padding: 15px;
+      padding: 18px;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -59,39 +65,43 @@
     }
     .product-info h3 {
       font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #4a5d23;
+      margin-bottom: 12px;
+      color: #3c4d1c;
     }
     .product-info .price {
       font-size: 1.1rem;
       font-weight: bold;
-      color: #a65f00;
+      color: #b8860b;
     }
     .product-info button {
-      background-color: #4a5d23;
-      color: white;
+      background-color: #ffd700;
+      color: #3c4d1c;
       border: none;
-      padding: 10px;
+      padding: 12px;
       border-radius: 6px;
       cursor: pointer;
-      margin-top: 15px;
+      margin-top: 18px;
+      font-weight: bold;
+      transition: background-color 0.2s;
     }
     .product-info button:hover {
-      background-color: #3c4919;
+      background-color: #e6c200;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 0.9rem;
-      color: #777;
-      margin-top: 30px;
+      color: #666;
+      background-color: #fafafa;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Olive Oil Shop</h1>
-    <p>Τα καλύτερα ελαιόλαδα για σένα</p>
+    <p>Premium ελαιόλαδα απευθείας από τον παραγωγό</p>
   </header>
 
   <div class="container">
@@ -105,7 +115,7 @@
         </div>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1583344456647-b263b1f3ed5b?auto=format&fit=crop&w=500" alt="Βιολογικό">
+        <img src="https://images.unsplash.com/photo-1583344456647-b263b1f3ed5b?auto=format&fit=crop&w=500" alt="Βιολογικό Ελαιόλαδο">
         <div class="product-info">
           <h3>Βιολογικό Ελαιόλαδο</h3>
           <span class="price">€12,00</span>
@@ -113,43 +123,8 @@
         </div>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1617196038496-77c8f478d1bc?auto=format&fit=crop&w=500" alt="Premium">
+        <img src="https://images.unsplash.com/photo-1617196038496-77c8f478d1bc?auto=format&fit=crop&w=500" alt="Premium Ελαιόλαδο">
         <div class="product-info">
           <h3>Premium Ελαιόλαδο</h3>
           <span class="price">€15,00</span>
-          <button>Αγορά Τώρα</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1601050690597-df6a5c0f6e7f?auto=format&fit=crop&w=500" alt="Λεμόνι">
-        <div class="product-info">
-          <h3>Αρωματικό με Λεμόνι</h3>
-          <span class="price">€14,00</span>
-          <button>Αγορά Τώρα</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1601050690598-68e3a2f0cc90?auto=format&fit=crop&w=500" alt="Βότανα">
-        <div class="product-info">
-          <h3>Αρωματικό με Βότανα</h3>
-          <span class="price">€14,00</span>
-          <button>Αγορά Τώρα</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac1d?auto=format&fit=crop&w=500" alt="Καλαμάτας">
-        <div class="product-info">
-          <h3>Ελαιόλαδο Καλαμάτας</h3>
-          <span class="price">€20,00</span>
-          <button>Αγορά Τώρα</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Olive Oil Shop. Όλα τα δικαιώματα διατηρούνται.
-  </footer>
-</body>
-</html>
-
+          <button
