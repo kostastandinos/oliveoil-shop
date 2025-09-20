@@ -1,12 +1,67 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olive Oil Shop</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/32/2909/2909765.png">
+  <style>
+    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#fdfcf8; color:#333;}
+    
+    header { display:flex; justify-content:space-between; align-items:center; padding:10px 30px; background:linear-gradient(135deg, #3c4d1c, #6a7b32); color:#f5f2e7; position:sticky; top:0; z-index:1000; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    header .logo-title { display:flex; align-items:center; }
+    header img { width:50px; height:50px; margin-right:12px; }
+    header h1 { margin:0; font-size:1.8rem; color:#ffd700; letter-spacing:1.5px;}
+    nav { display:flex; gap:20px; }
+    nav a { color:#fff9d9; text-decoration:none; font-weight:bold; padding:6px 10px; border-radius:4px; transition:0.2s; }
+    nav a:hover { background-color: rgba(255,215,0,0.3);}
+    
+    /* Hamburger */
+    .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+    .hamburger div { width:25px; height:3px; background:#fff;}
+    
+    /* Hero Section */
+    .hero { position:relative; height:450px; background-image:url('https://images.unsplash.com/photo-1580910051072-f6a8b8e3d85f?auto=format&fit=crop&w=1600'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; text-align:center; color:white; }
+    .hero::after { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.35);}
+    .hero-content { position:relative; z-index:1; }
+    .hero h2 { font-size:3rem; margin-bottom:20px; letter-spacing:2px;}
+    .hero p { font-size:1.2rem; margin-bottom:25px; }
+    .hero a { background:#ffd700; color:#3c4d1c; text-decoration:none; padding:12px 25px; border-radius:6px; font-weight:bold; transition:0.2s;}
+    .hero a:hover { background:#e6c200; }
+
+    .container { max-width:1200px; margin:30px auto; padding:0 15px;}
+    .grid-products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px;}
+    .product-card { background:white; border:1px solid #ddd; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; transition:0.25s; }
+    .product-card:hover { transform:translateY(-6px); box-shadow:0 6px 16px rgba(0,0,0,0.15);}
+    .product-card img { width:100%; height:220px; object-fit:cover; }
+    .product-info { padding:18px; flex:1; display:flex; flex-direction:column; justify-content:space-between; }
+    .product-info h3 { font-size:1.2rem; margin-bottom:12px; color:#3c4d1c;}
+    .product-info .price { font-size:1.1rem; font-weight:bold; color:#b8860b; }
+    .product-info button { background:#ffd700; color:#3c4d1c; border:none; padding:12px; border-radius:6px; margin-top:18px; font-weight:bold; cursor:pointer; transition:0.2s; }
+    .product-info button:hover { background:#e6c200; }
+
+    footer { text-align:center; padding:25px; font-size:0.9rem; color:#666; background:#fafafa; margin-top:40px; border-top:1px solid #ddd; }
+
+    html { scroll-behavior:smooth; }
+
+    /* Responsive */
+    @media (max-width:768px){
+      nav { display:none; flex-direction:column; position:absolute; top:60px; right:0; background:#3c4d1c; width:200px; border-radius:0 0 0 8px; overflow:hidden;}
+      nav.show { display:flex; }
+      .hamburger { display:flex; }
+      nav a { padding:12px; border-bottom:1px solid #fff9d9;}
+    }
+  </style>
+</head>
+<body>
+
 <header>
   <div class="logo-title">
     <img src="https://cdn-icons-png.flaticon.com/512/2909/2909765.png" alt="Olive Oil Logo">
     <h1>Olive Oil Shop</h1>
   </div>
   <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
+    <div></div><div></div><div></div>
   </div>
   <nav id="nav-links">
     <a href="#home">Αρχική</a>
@@ -14,3 +69,15 @@
     <a href="#contact">Επικοινωνία</a>
   </nav>
 </header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h2>Premium Ελαιόλαδα</h2>
+    <p>Απευθείας από τον παραγωγό στο σπίτι σας</p>
+    <a href="#products">Αγορά Τώρα</a>
+  </div>
+</section>
+
+<div class="container" id="products">
+  <div class="grid-products">
+    <div class="product
