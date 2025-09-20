@@ -67,7 +67,7 @@
 
     .container {
       max-width: 1200px;
-      margin: 80px auto 30px; /* offset for sticky header */
+      margin: 30px auto;
       padding: 0 15px;
     }
 
@@ -131,4 +131,44 @@
     }
 
     .product-info button:hover {
-      backgr
+      background-color: #e6c200;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #fafafa;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="https://cdn-icons-png.flaticon.com/512/2909/2909765.png" alt="Olive Oil Logo">
+      <h1>Olive Oil Shop</h1>
+    </div>
+    <nav>
+      <a href="#home">Αρχική</a>
+      <a href="#products">Προϊόντα</a>
+      <a href="#contact">Επικοινωνία</a>
+    </nav>
+  </header>
+
+  <div class="container" id="products">
+    <div class="grid-products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598032892013-fb76fbd6e98b?auto=format&fit=crop&w=500" alt="Εξαιρετικό Παρθένο Ελαιόλαδο">
+        <div class="product-info">
+          <h3>Εξαιρετικό Παρθένο Ελαιόλαδο</h3>
+          <span class="price">€10,00</span>
+          <button>Αγορά Τώρα</button
