@@ -15,41 +15,59 @@
       padding: 0;
     }
 
+    /* Sticky Navbar */
     header {
       display: flex;
       align-items: center;
-      padding: 15px 30px;
+      justify-content: space-between;
+      padding: 10px 30px;
       background: linear-gradient(135deg, #3c4d1c, #6a7b32);
       color: #f5f2e7;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header .logo-title {
+      display: flex;
+      align-items: center;
     }
 
     header img {
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
-    }
-
-    header .header-text {
-      display: flex;
-      flex-direction: column;
+      width: 50px;
+      height: 50px;
+      margin-right: 12px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
-      color: #ffd700; /* χρυσό */
+      font-size: 1.8rem;
+      color: #ffd700;
       letter-spacing: 1.5px;
     }
 
-    header p {
-      margin: 3px 0 0 0;
-      font-size: 1rem;
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
       color: #fff9d9;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 215, 0, 0.3);
     }
 
     .container {
       max-width: 1200px;
-      margin: 30px auto;
+      margin: 80px auto 30px; /* offset for sticky header */
       padding: 0 15px;
     }
 
@@ -71,4 +89,46 @@
 
     .product-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 6px 1
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #3c4d1c;
+    }
+
+    .product-info .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #b8860b;
+    }
+
+    .product-info button {
+      background-color: #ffd700;
+      color: #3c4d1c;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 18px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .product-info button:hover {
+      backgr
